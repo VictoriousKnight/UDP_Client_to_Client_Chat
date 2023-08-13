@@ -47,7 +47,7 @@ def broadcast():
                         
                     else:
                         server_socket.sendto(message, client)
-                        print("test1")
+                        #print("test1")
                         
                 except:
                     clients_list.remove(client)
