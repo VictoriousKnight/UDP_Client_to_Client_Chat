@@ -1,5 +1,5 @@
 import socket
-import threading
+import threading #to handle multiple clients at the same time
 import queue
 
 #defining clients list using queue data structure
