@@ -26,7 +26,7 @@ thread.start()
 client_socket.sendto(f"{username} is online...".encode('utf-8'), (socket.gethostbyname(socket.gethostname()), 12345))
 
 while True:
-    message = input("You: ")
+    message = input()
     if message == "!DISCONNECT":
         client_socket.sendto(f"{username} left the chatroom...".encode('utf-8'), (socket.gethostbyname(socket.gethostname()), 12345))
         exit()
